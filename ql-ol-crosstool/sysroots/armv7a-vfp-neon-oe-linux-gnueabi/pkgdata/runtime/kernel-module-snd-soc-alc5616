@@ -1,0 +1,16 @@
+PN: linux-quic
+PV: git-quectel
+PR: r3
+PKGV: git-quectel
+PKGR: r3
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-snd-soc-alc5616: snd-soc-alc5616 kernel module; ASoC RT5616 driver
+SUMMARY_kernel-module-snd-soc-alc5616: snd-soc-alc5616 kernel module
+RDEPENDS_kernel-module-snd-soc-alc5616: kernel-3.18.20
+SECTION: base
+PKG_kernel-module-snd-soc-alc5616: kernel-module-snd-soc-alc5616
+FILES_kernel-module-snd-soc-alc5616: /lib/modules/3.18.20/kernel/sound/soc/codecs/snd-soc-alc5616.ko /etc/modules-load.d/snd-soc-alc5616.conf /etc/modprobe.d/snd-soc-alc5616.conf
+pkg_postinst_kernel-module-snd-soc-alc5616: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 3.18.20\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-snd-soc-alc5616: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 3.18.20\nelse\n\tdepmodwrapper -a -b $D 3.18.20\nfi\n\n
+FILES_INFO: {"/lib/modules/3.18.20/kernel/sound/soc/codecs/snd-soc-alc5616.ko": 39268}
+PKGSIZE_kernel-module-snd-soc-alc5616: 39268

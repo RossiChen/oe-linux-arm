@@ -1,0 +1,15 @@
+PN: mcm-core
+PV: git-invalidgit
+PR: r4
+PKGV: git-invalidgit
+PKGR: r4
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_mcm-core-dbg: QTI Mobile Connection Manager Core libraries and Service  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_mcm-core-dbg: mcm-core version git-invalidgit-r4 - Debugging files
+RRECOMMENDS_mcm-core-dbg: adiertac-dbg audcal-dbg dsutils-dbg glibc-dbg qmi-client-helper-dbg configdb-dbg xmllib-dbg acdbmapper-dbg libstdc++-dbg diag-dbg data-dbg audioalsa-dbg time-genoff-dbg acdbrtac-dbg acdbloader-dbg glib-2.0-dbg libgcc-dbg qmi-framework-dbg alsa-intf-dbg qmi-dbg
+SECTION_mcm-core-dbg: devel
+PKG_mcm-core-dbg: mcm-core-dbg
+ALLOW_EMPTY_mcm-core-dbg: 1
+FILES_mcm-core-dbg: /usr/bin/.debug /usr/sbin/.debug /usr/lib/mcm-core/.debug /usr/lib/.debug /bin/.debug /sbin/.debug /lib/.debug /usr/lib/mcm-core/.debug /usr/lib/matchbox-panel/.debug /usr/lib/mcm-core/mcm-core/.debug /usr/src/debug /usr/tests/.debug/
+FILES_INFO: {"/usr/tests/.debug/mcm_data_test": 9777, "/usr/bin/.debug/MCM_atcop_svc": 8994, "/usr/bin/.debug/mcm_data_srv": 20509, "/usr/bin/.debug/uim_test_client": 14269, "/usr/lib/.debug/libmcmipc.so.0.0.0": 32018, "/usr/lib/.debug/libmcm_srv_audio.so.0.0.0": 51141, "/usr/bin/.debug/IoEConsoleClient": 18319, "/usr/bin/.debug/mcm_ril_service": 1405668, "/usr/lib/.debug/libmcm_log_util.so.0.0.0": 17882, "/usr/bin/.debug/MCM_MOBILEAP_ConnectionManager": 64710, "/usr/lib/.debug/libmcm.so.0.0.0": 33034, "/usr/bin/.debug/MCM_MOBILEAP_CLI": 7094, "/usr/bin/.debug/MCM_ATCOP_CLI": 5957}
+PKGSIZE_mcm-core-dbg: 1689372

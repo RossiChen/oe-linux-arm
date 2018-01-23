@@ -1,0 +1,159 @@
+PN: util-linux
+PV: 2.25.2
+PR: r1
+PKGV: 2.25.2
+PKGR: r1
+LICENSE: GPLv2only & LGPLv2.1only
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux: ncurses-libtinfo (>= 5.9) util-linux-libuuid (>= 2.25.2) util-linux-libmount (>= 2.25.2) glibc (>= 2.21) util-linux-swaponoff ncurses-libncursesw (>= 5.9) util-linux-libblkid (>= 2.25.2) util-linux-umount util-linux-losetup update-alternatives-opkg
+RRECOMMENDS_util-linux: util-linux-fdisk util-linux-cfdisk util-linux-sfdisk util-linux-mount util-linux-readprofile util-linux-mkfs 
+SECTION: base
+PKG_util-linux: util-linux
+FILES_util-linux: /usr/bin/* /usr/sbin/* /usr/lib/util-linux/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/util-linux /usr/lib/util-linux/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_util-linux: #!/bin/sh\n\tupdate-alternatives --install /bin/dmesg dmesg /bin/dmesg.util-linux 100\n\tupdate-alternatives --install /bin/kill kill /bin/kill.util-linux 100\n\tupdate-alternatives --install /bin/more more /bin/more.util-linux 100\n\tupdate-alternatives --install /sbin/mkswap mkswap /sbin/mkswap.util-linux 100\n\tupdate-alternatives --install /sbin/blockdev blockdev /sbin/blockdev.util-linux 100\n\tupdate-alternatives --install /sbin/pivot_root pivot_root /sbin/pivot_root.util-linux 100\n\tupdate-alternatives --install /sbin/switch_root switch_root /sbin/switch_root.util-linux 100\n\tupdate-alternatives --install /sbin/mkfs.minix mkfs.minix /sbin/mkfs.minix.util-linux 100\n\tupdate-alternatives --install /usr/bin/hexdump hexdump /usr/bin/hexdump.util-linux 100\n\tupdate-alternatives --install /usr/bin/last last /usr/bin/last.util-linux 100\n\tupdate-alternatives --install /usr/bin/logger logger /usr/bin/logger.util-linux 100\n\tupdate-alternatives --install /usr/bin/mesg mesg /usr/bin/mesg.util-linux 100\n\tupdate-alternatives --install /usr/bin/renice renice /usr/bin/renice.util-linux 100\n\tupdate-alternatives --install /usr/bin/wall wall /usr/bin/wall.util-linux 100\n\tupdate-alternatives --install /usr/bin/setsid setsid /usr/bin/setsid.util-linux 100\n\tupdate-alternatives --install /usr/bin/chrt chrt /usr/bin/chrt.util-linux 100\n\tupdate-alternatives --install /usr/bin/flock flock /usr/bin/flock.util-linux 100\n\tupdate-alternatives --install /usr/bin/utmpdump utmpdump /usr/bin/utmpdump.util-linux 100\n\tupdate-alternatives --install /usr/bin/eject eject /usr/bin/eject.util-linux 100\n\tupdate-alternatives --install /sbin/sulogin sulogin /sbin/sulogin.util-linux 100\n
+pkg_postrm_util-linux: #!/bin/sh\n\tupdate-alternatives --remove  dmesg /bin/dmesg.util-linux\n\tupdate-alternatives --remove  kill /bin/kill.util-linux\n\tupdate-alternatives --remove  more /bin/more.util-linux\n\tupdate-alternatives --remove  mkswap /sbin/mkswap.util-linux\n\tupdate-alternatives --remove  blockdev /sbin/blockdev.util-linux\n\tupdate-alternatives --remove  pivot_root /sbin/pivot_root.util-linux\n\tupdate-alternatives --remove  switch_root /sbin/switch_root.util-linux\n\tupdate-alternatives --remove  mkfs.minix /sbin/mkfs.minix.util-linux\n\tupdate-alternatives --remove  hexdump /usr/bin/hexdump.util-linux\n\tupdate-alternatives --remove  last /usr/bin/last.util-linux\n\tupdate-alternatives --remove  logger /usr/bin/logger.util-linux\n\tupdate-alternatives --remove  mesg /usr/bin/mesg.util-linux\n\tupdate-alternatives --remove  renice /usr/bin/renice.util-linux\n\tupdate-alternatives --remove  wall /usr/bin/wall.util-linux\n\tupdate-alternatives --remove  setsid /usr/bin/setsid.util-linux\n\tupdate-alternatives --remove  chrt /usr/bin/chrt.util-linux\n\tupdate-alternatives --remove  flock /usr/bin/flock.util-linux\n\tupdate-alternatives --remove  utmpdump /usr/bin/utmpdump.util-linux\n\tupdate-alternatives --remove  eject /usr/bin/eject.util-linux\n\tupdate-alternatives --remove  sulogin /sbin/sulogin.util-linux\n
+FILERPROVIDESFLIST_util-linux: /usr/bin/fallocate /usr/bin/rev /bin/more.util-linux /sbin/sulogin.util-linux /usr/bin/column /usr/bin/script /sbin/pivot@underscore@root.util-linux /usr/sbin/delpart /usr/bin/ul /usr/bin/logger.util-linux /usr/bin/prlimit /sbin/switch@underscore@root.util-linux /usr/bin/write /usr/bin/pg /usr/bin/ipcrm /usr/bin/taskset /bin/dmesg.util-linux /usr/bin/isosize /usr/bin/nsenter /usr/bin/whereis /sbin/ctrlaltdel /usr/bin/setarch /usr/bin/chrt.util-linux /usr/bin/setsid.util-linux /usr/bin/lslogins /usr/bin/renice.util-linux /usr/sbin/wipefs /sbin/mkfs.minix.util-linux /usr/sbin/fsfreeze /usr/sbin/raw /usr/bin/lslocks /usr/sbin/blkdiscard /usr/bin/ipcmk /usr/bin/hexdump.util-linux /usr/bin/utmpdump.util-linux /usr/bin/look /usr/bin/ionice /usr/sbin/nologin /usr/bin/eject.util-linux /usr/bin/findmnt /usr/bin/flock.util-linux /usr/sbin/addpart /usr/bin/last.util-linux /usr/sbin/ldattach /usr/bin/setterm /usr/sbin/chcpu /usr/bin/ipcs /usr/sbin/resizepart /usr/bin/colrm /usr/bin/unshare /usr/bin/mountpoint /usr/bin/namei /usr/bin/wall.util-linux /lib/libsmartcols.so.1.1.0 /usr/sbin/swaplabel /usr/bin/rename /usr/sbin/fdformat /usr/bin/colcrt /usr/bin/col /usr/bin/lsblk /usr/sbin/mkfs.bfs /sbin/blockdev.util-linux /usr/bin/scriptreplay /sbin/mkswap.util-linux /usr/bin/cal /usr/sbin/rtcwake /usr/bin/mesg.util-linux /bin/kill.util-linux /usr/bin/tailf /usr/bin/wdctl
+FILES_INFO: {"/usr/bin/utmpdump.util-linux": 10348, "/usr/bin/rev": 6300, "/usr/bin/linux64": 7, "/bin/more.util-linux": 31016, "/sbin/sulogin.util-linux": 31100, "/usr/bin/column": 17600, "/usr/bin/script": 12384, "/usr/sbin/delpart": 11680, "/usr/bin/ul": 11756, "/usr/bin/colrm": 12800, "/usr/bin/logger.util-linux": 17368, "/usr/bin/prlimit": 20484, "/usr/bin/ipcs": 31032, "/usr/bin/write": 9560, "/usr/bin/pg": 31008, "/etc/default/mountall": 36, "/usr/bin/ipcrm": 16360, "/usr/bin/fallocate": 16808, "/usr/bin/taskset": 18716, "/bin/dmesg.util-linux": 43616, "/usr/bin/isosize": 13860, "/usr/bin/nsenter": 17076, "/usr/bin/wall.util-linux": 18856, "/usr/bin/setarch": 9564, "/usr/bin/chrt.util-linux": 17524, "/usr/bin/lastb": 4, "/usr/bin/setsid.util-linux": 6388, "/usr/bin/colcrt": 7412, "/usr/bin/renice.util-linux": 6740, "/sbin/pivot_root.util-linux": 5360, "/usr/sbin/wipefs": 20104, "/sbin/mkfs.minix.util-linux": 26824, "/usr/sbin/fsfreeze": 6936, "/usr/sbin/raw": 7576, "/lib/libsmartcols.so.1": 106868, "/usr/bin/lslocks": 19544, "/usr/sbin/blkdiscard": 13928, "/sbin/blockdev.util-linux": 20492, "/usr/bin/ipcmk": 15200, "/usr/bin/hexdump.util-linux": 32068, "/usr/sbin/nologin": 4708, "/usr/bin/look": 7432, "/usr/bin/linux32": 7, "/usr/bin/eject.util-linux": 31900, "/usr/bin/findmnt": 36024, "/usr/bin/flock.util-linux": 15744, "/usr/bin/col": 16148, "/usr/bin/last.util-linux": 27460, "/usr/sbin/ldattach": 16620, "/usr/bin/setterm": 26748, "/usr/sbin/chcpu": 14720, "/usr/bin/cal": 27928, "/usr/sbin/resizepart": 21204, "/sbin/switch_root.util-linux": 7860, "/usr/bin/mesg.util-linux": 6160, "/usr/bin/unshare": 8860, "/usr/bin/mountpoint": 7652, "/usr/bin/namei": 16620, "/usr/sbin/swaplabel": 8260, "/usr/bin/rename": 7232, "/usr/sbin/fdformat": 7324, "/sbin/ctrlaltdel": 5600, "/usr/bin/uname26": 7, "/usr/sbin/addpart": 11808, "/usr/bin/lsblk": 47596, "/usr/sbin/mkfs.bfs": 17692, "/usr/bin/ionice": 15164, "/usr/bin/scriptreplay": 7652, "/sbin/mkswap.util-linux": 47504, "/usr/bin/lslogins": 35172, "/usr/bin/whereis": 15152, "/usr/sbin/rtcwake": 19944, "/bin/kill.util-linux": 19752, "/usr/bin/tailf": 14700, "/usr/bin/wdctl": 20244}
+FILERPROVIDES_/usr/bin/fallocate_util-linux: elf(buildid) (= 275d5d9a7a1e97a5d65c3a2f685462be296d2bd9)
+FILERPROVIDES_/usr/bin/rev_util-linux: elf(buildid) (= feee00ce23a5b92a42986f5d77d61828737d7dd0)
+FILERPROVIDES_/bin/more.util-linux_util-linux: elf(buildid) (= 2f92ccceb257530d5aeb44887c2b55e7976c9f24) /bin/more
+FILERPROVIDES_/sbin/sulogin.util-linux_util-linux: elf(buildid) (= 34fb8a659424e83bfbc224f58a56ecf38f336173) /sbin/sulogin
+FILERPROVIDES_/usr/bin/column_util-linux: elf(buildid) (= db9d805b08e1f36056fb7ad96bc1bdfd62e71256)
+FILERPROVIDES_/usr/bin/script_util-linux: elf(buildid) (= c5b098e85a6b411fcdbf6a7837c10c9452c00595)
+FILERPROVIDES_/sbin/pivot@underscore@root.util-linux_util-linux: elf(buildid) (= d643a907d04e080eaf0c793c5d3d459ee9c9043f) /sbin/pivot_root
+FILERPROVIDES_/usr/sbin/delpart_util-linux: elf(buildid) (= 9bb7eba0269142b404fb27766bd6dc605792cee7)
+FILERPROVIDES_/usr/bin/ul_util-linux: elf(buildid) (= d7747554819bae57777ccb4f01754768fc6531d8)
+FILERPROVIDES_/usr/bin/logger.util-linux_util-linux: elf(buildid) (= c52825c390c944f0a42d680a886d86a65ee0b426) /usr/bin/logger
+FILERPROVIDES_/usr/bin/prlimit_util-linux: elf(buildid) (= 16f6884df0abda5a53aa5e1854e1195e4006b183)
+FILERPROVIDES_/sbin/switch@underscore@root.util-linux_util-linux: elf(buildid) (= bb31cb29e99504c6d73460271c3f4e67f67b65bf) /sbin/switch_root
+FILERPROVIDES_/usr/bin/write_util-linux: elf(buildid) (= e663d602acdac57fc4d599479966bd3a9c409f34)
+FILERPROVIDES_/usr/bin/pg_util-linux: elf(buildid) (= 06ca19e65ddfa0015a247e58715e49da5e50c997)
+FILERPROVIDES_/usr/bin/ipcrm_util-linux: elf(buildid) (= d33bd48db5790312e81679af85d6788c862a9036)
+FILERPROVIDES_/usr/bin/taskset_util-linux: elf(buildid) (= 266e1d5549b560bbd36a440bdadf0eee598f353f)
+FILERPROVIDES_/bin/dmesg.util-linux_util-linux: elf(buildid) (= 63d924288ac6a3128b96c1f18619f131552b05f9) /bin/dmesg
+FILERPROVIDES_/usr/bin/isosize_util-linux: elf(buildid) (= 9974c8d769c8ff377a593cb4ed09e28dd543a56c)
+FILERPROVIDES_/usr/bin/nsenter_util-linux: elf(buildid) (= 47aef91e74296055bbe985e29813fdd2e7e558fb)
+FILERPROVIDES_/usr/bin/whereis_util-linux: elf(buildid) (= b99cbbfc190fabb97bd82da8ecbcb1f7e1bdffba)
+FILERPROVIDES_/sbin/ctrlaltdel_util-linux: elf(buildid) (= 708442d82bfc9a154d14794d5998f078bd783de4)
+FILERPROVIDES_/usr/bin/setarch_util-linux: elf(buildid) (= e1f5df4c82911b76cd866fd3f0ca6086658f3421)
+FILERPROVIDES_/usr/bin/chrt.util-linux_util-linux: elf(buildid) (= 44a39b090354fce9336476da8c8ce1d4db49f170) /usr/bin/chrt
+FILERPROVIDES_/usr/bin/setsid.util-linux_util-linux: elf(buildid) (= 278b865f31b94538b890459f888ee4f8c9ecdfb0) /usr/bin/setsid
+FILERPROVIDES_/usr/bin/lslogins_util-linux: elf(buildid) (= eb849abe2dc10e6d51e486bf3ca86ce503ff7603)
+FILERPROVIDES_/usr/bin/renice.util-linux_util-linux: elf(buildid) (= 463085facbe59e2d91861db3c29ef824ed082f56) /usr/bin/renice
+FILERPROVIDES_/usr/sbin/wipefs_util-linux: elf(buildid) (= e34aab38f19edb34f9b09517a084bff64d80a53b)
+FILERPROVIDES_/sbin/mkfs.minix.util-linux_util-linux: elf(buildid) (= c498407e443c515ec983953a321e29632ebd6488) /sbin/mkfs.minix
+FILERPROVIDES_/usr/sbin/fsfreeze_util-linux: elf(buildid) (= 5c0765a641a6730ef08d69d2f19bd7f91c575523)
+FILERPROVIDES_/usr/sbin/raw_util-linux: elf(buildid) (= bfe2562baa0d546100db60f0940ae989e5f3fc50)
+FILERPROVIDES_/usr/bin/lslocks_util-linux: elf(buildid) (= 0c49cc583aeb3017cfabecb6581510b3278139fa)
+FILERPROVIDES_/usr/sbin/blkdiscard_util-linux: elf(buildid) (= b8c40d048341c02dd14bd33baf1303a72ab83d26)
+FILERPROVIDES_/usr/bin/ipcmk_util-linux: elf(buildid) (= 66d4ff1cab73d3211a04a6b40e018e5a983ed31e)
+FILERPROVIDES_/usr/bin/hexdump.util-linux_util-linux: elf(buildid) (= cd8a4af064b7ee9b2be6e4faf4750f0bd76db549) /usr/bin/hexdump
+FILERPROVIDES_/usr/bin/utmpdump.util-linux_util-linux: elf(buildid) (= 468ba3082bba46483438489103dc47998a0dec60) /usr/bin/utmpdump
+FILERPROVIDES_/usr/bin/look_util-linux: elf(buildid) (= d5d23eb0c00bc0006c8e09c12df1fae8c82a0347)
+FILERPROVIDES_/usr/bin/ionice_util-linux: elf(buildid) (= 5de5cafb91bac23e056ff4c4f4829e2571f1f529)
+FILERPROVIDES_/usr/sbin/nologin_util-linux: elf(buildid) (= 5448cbe74a9abea4f07dcaf25bb8196ff9473d08)
+FILERPROVIDES_/usr/bin/eject.util-linux_util-linux: elf(buildid) (= 37621863882ee24d1a9a60a990761cdcc8e8f32e) /usr/bin/eject
+FILERPROVIDES_/usr/bin/findmnt_util-linux: elf(buildid) (= 84241c2288265547c85cf4e1b5b8e1a4fdb46037)
+FILERPROVIDES_/usr/bin/flock.util-linux_util-linux: elf(buildid) (= e441d12002c426451c61820988ad17b369a61171) /usr/bin/flock
+FILERPROVIDES_/usr/sbin/addpart_util-linux: elf(buildid) (= a49a62f93d816675a64454dcf995cdb29508c88a)
+FILERPROVIDES_/usr/bin/last.util-linux_util-linux: elf(buildid) (= c3bc22d61643c7590c594fb2568a1105eaee22dc) /usr/bin/last
+FILERPROVIDES_/usr/sbin/ldattach_util-linux: elf(buildid) (= 1d108be677e3a467de454a10573428c5bd7bec61)
+FILERPROVIDES_/usr/bin/setterm_util-linux: elf(buildid) (= 699eaa38025a82f3825ec35f3d7047b6550e868e)
+FILERPROVIDES_/usr/sbin/chcpu_util-linux: elf(buildid) (= 9305b0a4dfd06286a1e534ceb60abe84b7f92fdd)
+FILERPROVIDES_/usr/bin/ipcs_util-linux: elf(buildid) (= 661e2fe9cbe87dbefe9f6b65d76aae0e57f569e0)
+FILERPROVIDES_/usr/sbin/resizepart_util-linux: elf(buildid) (= 301d2b543ad37961c67fd620c7132dfac37db5ea)
+FILERPROVIDES_/usr/bin/colrm_util-linux: elf(buildid) (= 3dc80b853fa4ceee36e1febefd129d392f43e063)
+FILERPROVIDES_/usr/bin/unshare_util-linux: elf(buildid) (= 7aea92f7b40e9c51993e697e290a30271acf0178)
+FILERPROVIDES_/usr/bin/mountpoint_util-linux: elf(buildid) (= ed47f0018635901976d99bb0da59d15f052dbf5e)
+FILERPROVIDES_/usr/bin/namei_util-linux: elf(buildid) (= 96006a147f75228da89faf77b1674d056846131e)
+FILERPROVIDES_/usr/bin/wall.util-linux_util-linux: elf(buildid) (= d54f705e137da665d36b8864edb99e73238709a8) /usr/bin/wall
+FILERPROVIDES_/lib/libsmartcols.so.1.1.0_util-linux: elf(buildid) (= 8ccef15fa88a516da359e97beaaf2e96717ccca5) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25)
+FILERPROVIDES_/usr/sbin/swaplabel_util-linux: elf(buildid) (= c79d4f2e351202879173aa4417076dfbe1369706)
+FILERPROVIDES_/usr/bin/rename_util-linux: elf(buildid) (= 8e763d2b32e64a6f6e777347c5fa8df779f658f5)
+FILERPROVIDES_/usr/sbin/fdformat_util-linux: elf(buildid) (= 9c9e769c5b9a843b1d7d02c1aea248643e7025ef)
+FILERPROVIDES_/usr/bin/colcrt_util-linux: elf(buildid) (= acd81a6af025eb2c7105848e9a7fdcb064927a33)
+FILERPROVIDES_/usr/bin/col_util-linux: elf(buildid) (= d947e3459c7d2552d40ef208a1fb6574f922d443)
+FILERPROVIDES_/usr/bin/lsblk_util-linux: elf(buildid) (= 19a2dba98bcd1c704651235f074fe4933e5feb5b)
+FILERPROVIDES_/usr/sbin/mkfs.bfs_util-linux: elf(buildid) (= 8d1aac2576735703f9b87406cb703dd790ef56b9)
+FILERPROVIDES_/sbin/blockdev.util-linux_util-linux: elf(buildid) (= ab753d8e7a2a0506234ae8cbc3ceeabf920419fd) /sbin/blockdev
+FILERPROVIDES_/usr/bin/scriptreplay_util-linux: elf(buildid) (= f0321963fb2ebf1d51355f55f37a6ff973dc2399)
+FILERPROVIDES_/sbin/mkswap.util-linux_util-linux: elf(buildid) (= d7c6e2a15cddb523712861c5c48800f6c53eb309) /sbin/mkswap
+FILERPROVIDES_/usr/bin/cal_util-linux: elf(buildid) (= 14fd4df02ce08ef5c40f8af7dd1d59c7c615cd1c)
+FILERPROVIDES_/usr/sbin/rtcwake_util-linux: elf(buildid) (= 186fb872105fae06be93ecf00df9e0519a07bcaf)
+FILERPROVIDES_/usr/bin/mesg.util-linux_util-linux: elf(buildid) (= e0cff677fd3991be9d62e83db7445e7e56dbd37b) /usr/bin/mesg
+FILERPROVIDES_/bin/kill.util-linux_util-linux: elf(buildid) (= 6a5d8a0b1cc1caf00cb9591a783c3254b36e9504) /bin/kill
+FILERPROVIDES_/usr/bin/tailf_util-linux: elf(buildid) (= d9804e231a5ec2d4441a53e2b3306b96a0310201)
+FILERPROVIDES_/usr/bin/wdctl_util-linux: elf(buildid) (= 7577eb67be58fa0ccee0071dec99b0f32e239555)
+FILERDEPENDSFLIST_util-linux: /usr/bin/fallocate /usr/bin/rev /bin/more.util-linux /sbin/sulogin.util-linux /usr/bin/column /usr/bin/script /sbin/pivot@underscore@root.util-linux /usr/sbin/delpart /usr/bin/ul /usr/bin/logger.util-linux /usr/bin/prlimit /sbin/switch@underscore@root.util-linux /usr/bin/write /usr/bin/pg /usr/bin/ipcrm /usr/bin/taskset /bin/dmesg.util-linux /usr/bin/isosize /usr/bin/nsenter /usr/bin/whereis /sbin/ctrlaltdel /usr/bin/setarch /usr/bin/chrt.util-linux /usr/bin/setsid.util-linux /usr/bin/lslogins /usr/bin/renice.util-linux /usr/sbin/wipefs /sbin/mkfs.minix.util-linux /usr/sbin/fsfreeze /usr/sbin/raw /usr/bin/lslocks /usr/sbin/blkdiscard /usr/bin/ipcmk /usr/bin/hexdump.util-linux /usr/bin/utmpdump.util-linux /usr/bin/look /usr/bin/ionice /usr/sbin/nologin /usr/bin/eject.util-linux /usr/bin/findmnt /usr/bin/flock.util-linux /usr/sbin/addpart /usr/bin/last.util-linux /usr/sbin/ldattach /usr/bin/setterm /usr/sbin/chcpu /usr/bin/ipcs /usr/sbin/resizepart /usr/bin/colrm /usr/bin/unshare /usr/bin/mountpoint /usr/bin/namei /usr/bin/wall.util-linux /lib/libsmartcols.so.1.1.0 /usr/sbin/swaplabel /usr/bin/rename /usr/sbin/fdformat /usr/bin/colcrt /usr/bin/col /usr/bin/lsblk /usr/sbin/mkfs.bfs /sbin/blockdev.util-linux /usr/bin/scriptreplay /sbin/mkswap.util-linux /usr/bin/cal /usr/sbin/rtcwake /usr/bin/mesg.util-linux /bin/kill.util-linux /usr/bin/tailf /usr/bin/wdctl
+FILERDEPENDS_/usr/bin/fallocate_util-linux: libc.so.6 libc.so.6(GLIBC_2.11) libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/rev_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/bin/more.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/sbin/sulogin.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libcrypt.so.1 libcrypt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/column_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/script_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libutil.so.1 libutil.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/pivot@underscore@root.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/delpart_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ul_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/logger.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/prlimit_util-linux: libc.so.6 libc.so.6(GLIBC_2.13) libc.so.6(GLIBC_2.4) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/switch@underscore@root.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/write_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pg_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libncursesw.so.5 libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ipcrm_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/taskset_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/bin/dmesg.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/isosize_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/nsenter_util-linux: libc.so.6 libc.so.6(GLIBC_2.14) libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/whereis_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/ctrlaltdel_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/setarch_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/chrt.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/setsid.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/lslogins_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/renice.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/wipefs_util-linux: libblkid.so.1 libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.18) libblkid.so.1(BLKID_2.21) libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/mkfs.minix.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/fsfreeze_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/raw_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/lslocks_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.22) libmount.so.1(MOUNT_2.24) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/blkdiscard_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ipcmk_util-linux: ld-linux.so.3 ld-linux.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hexdump.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/utmpdump.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/look_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ionice_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/nologin_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/eject.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.24) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/findmnt_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.20) libmount.so.1(MOUNT_2.21) libmount.so.1(MOUNT_2.22) libmount.so.1(MOUNT_2.23) libmount.so.1(MOUNT_2.24) libmount.so.1(MOUNT_2.25) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/flock.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/addpart_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/last.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/ldattach_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/setterm_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/chcpu_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ipcs_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/resizepart_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/colrm_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/unshare_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/mountpoint_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.24) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/namei_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/wall.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/lib/libsmartcols.so.1.1.0_util-linux: ld-linux.so.3 ld-linux.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/swaplabel_util-linux: libblkid.so.1 libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.4) libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/rename_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/fdformat_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/colcrt_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/col_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/lsblk_util-linux: libblkid.so.1 libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libmount.so.1 libmount.so.1(MOUNT_2.19) libmount.so.1(MOUNT_2.22) libmount.so.1(MOUNT_2.24) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/mkfs.bfs_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/blockdev.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/scriptreplay_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/mkswap.util-linux_util-linux: libblkid.so.1 libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.21) libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cal_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/rtcwake_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/mesg.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/bin/kill.util-linux_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tailf_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/wdctl_util-linux: libc.so.6 libc.so.6(GLIBC_2.4) libsmartcols.so.1 libsmartcols.so.1(SMARTCOLS_2.25) rtld(GNU_HASH)
+PKGSIZE_util-linux: 1316901

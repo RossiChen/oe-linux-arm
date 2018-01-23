@@ -1,0 +1,14 @@
+PN: system-core
+PV: git
+PR: r16
+PKGV: git
+PKGR: r16
+LICENSE: Apache-2.0
+DESCRIPTION: Android system/core components
+SUMMARY: system-core version git-r16
+RRECOMMENDS_system-core-adbd-dbg: libgcc-dbg glibc-dbg libcrypto-dbg libstdc++-dbg zlib-dbg
+SECTION: base
+PKG_system-core-adbd-dbg: system-core-adbd-dbg
+FILES_system-core-adbd-dbg: /sbin/.debug/adbd
+FILES_INFO: {"/sbin/.debug/adbd": 282412}
+PKGSIZE_system-core-adbd-dbg: 282412

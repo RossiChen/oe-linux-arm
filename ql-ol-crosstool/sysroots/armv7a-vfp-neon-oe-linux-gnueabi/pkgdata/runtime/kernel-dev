@@ -1,0 +1,14 @@
+PN: linux-quic
+PV: git-quectel
+PR: r3
+PKGV: git-quectel
+PKGR: r3
+LICENSE: GPLv2
+DESCRIPTION: QuIC Linux Kernel
+SUMMARY: linux-quic version git-quectel-r3
+RRECOMMENDS_kernel-dev: kernel-module-snd-soc-quec-stub-dev kernel-base-dev kernel-module-mmc-test-dev kernel-module-snd-soc-nau8814-dev kernel-module-ansi-cprng-dev kernel-module-snd-soc-alc5616-dev kernel-module-gpio-axis-dev kernel-module-quec-spi-chn-dev kernel-module-spidev-dev kernel-module-qcom-emac-dev kernel-module-mmc-block-test-dev kernel-3.18.20-dev kernel-module-gpio-input-dev kernel-module-gpio-event-dev kernel-module-xt-physdev-dev kernel-module-snd-soc-tlv320aic3x-dev kernel-module-test-iosched-dev kernel-module-gpio-output-dev kernel-module-gpio-matrix-dev kernel-module-cls-basic-dev
+SECTION: base
+PKG_kernel-dev: kernel-dev
+FILES_kernel-dev: /boot/System.map* /boot/Module.symvers* /boot/config* /usr/src/kernel /lib/modules/3.18.20/build /boot/zImage-3.18.20
+FILES_INFO: {"/boot/Module.symvers-3.18.20": 398044, "/boot/zImage-3.18.20": 5285808, "/boot/System.map-3.18.20": 2416950, "/boot/config-3.18.20": 92451}
+PKGSIZE_kernel-dev: 8193253

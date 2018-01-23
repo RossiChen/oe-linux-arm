@@ -1,0 +1,15 @@
+PN: kernel-tests
+PV: git-invalidgit
+PR: r18
+PKGV: git-invalidgit
+PKGR: r18
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_kernel-tests-dbg: Qualcomm Technologies Proprietary kernel test  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_kernel-tests-dbg: kernel-tests version git-invalidgit-r18 - Debugging files
+RRECOMMENDS_kernel-tests-dbg: glibc-dbg
+SECTION_kernel-tests-dbg: devel
+PKG_kernel-tests-dbg: kernel-tests-dbg
+ALLOW_EMPTY_kernel-tests-dbg: 1
+FILES_kernel-tests-dbg: /usr/kernel-tests/*/.debug/* /usr/src/debug/*
+FILES_INFO: {"/usr/kernel-tests/qcedev/.debug/qcedev_test": 16960, "/usr/kernel-tests/vfp/.debug/vfptest": 5414, "/usr/kernel-tests/smd/.debug/smem_log_test": 6083, "/usr/kernel-tests/cacheflush/.debug/cacheflush": 128217, "/usr/kernel-tests/msm_uart/.debug/msm_uart_test": 5902, "/usr/kernel-tests/spi/.debug/spidevtest": 6850, "/usr/kernel-tests/i2c-msm/.debug/i2c-msm-test": 8738, "/usr/kernel-tests/smd/.debug/smd_pkt_loopback_test": 6594, "/usr/kernel-tests/dmov/.debug/dmov": 5591, "/usr/kernel-tests/smd/.debug/smd_tty_loopback_test": 6637, "/usr/kernel-tests/mtd/.debug/geoinfo_flash": 5015, "/usr/kernel-tests/pctest/.debug/pctest": 7429}
+PKGSIZE_kernel-tests-dbg: 209430

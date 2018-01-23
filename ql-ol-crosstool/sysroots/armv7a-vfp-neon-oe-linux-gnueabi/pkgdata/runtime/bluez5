@@ -1,0 +1,50 @@
+PN: bluez5
+PV: 5.19
+PR: r1
+PKGV: 5.19
+PKGR: r1
+LICENSE: GPLv2+ & LGPLv2.1+
+DESCRIPTION: Linux Bluetooth stack V5 userland components.  These include a system configurations, daemons, tools and system libraries.
+SUMMARY: Linux Bluetooth Stack Userland V5
+RDEPENDS_bluez5: libudev (>= 182) glibc (>= 2.21) dbus-lib (>= 1.8.10) glib-2.0 (>= 2.42.1) readline (>= 5.2) libical (>= 1.0.0)
+SECTION: libs
+PKG_bluez5: bluez5
+FILES_bluez5: /usr/bin/* /usr/sbin/* /usr/lib/bluez5/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/bluez5 /usr/lib/bluez5/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers   /lib/udev/   /lib/systemd/ 
+FILERPROVIDESFLIST_bluez5: /lib/udev/hid2hci /usr/lib/bluez5/bluetooth/obexd /usr/bin/rctest /usr/bin/hcitool /usr/bin/bccmd /usr/bin/l2test /usr/bin/hcidump /usr/bin/bluetoothctl /usr/bin/hciattach /usr/bin/ciptool /usr/bin/rfcomm /usr/bin/hciconfig /usr/bin/l2ping /usr/lib/bluez5/bluetooth/bluetoothd /usr/bin/btmon /usr/bin/sdptool /usr/bin/bluemoon
+FILES_INFO: {"/lib/udev/hid2hci": 11244, "/usr/lib/bluez5/bluetooth/obexd": 415604, "/etc/bluetooth/input.conf": 397, "/usr/bin/rctest": 104056, "/usr/bin/hcitool": 90364, "/usr/bin/bccmd": 140312, "/usr/bin/l2test": 75060, "/usr/bin/bluetoothctl": 86936, "/lib/udev/rules.d/97-hid2hci.rules": 1357, "/usr/bin/ciptool": 97560, "/usr/bin/hciattach": 120496, "/usr/bin/hciconfig": 139768, "/usr/bin/l2ping": 61340, "/etc/dbus-1/system.d/bluetooth.conf": 1311, "/usr/bin/sdptool": 148252, "/usr/lib/bluez5/bluetooth/bluetoothd": 690044, "/usr/bin/hcidump": 364740, "/usr/bin/rfcomm": 68572, "/usr/bin/btmon": 312088, "/usr/bin/bluemoon": 25296, "/etc/bluetooth/network.conf": 120}
+FILERPROVIDES_/lib/udev/hid2hci_bluez5: elf(buildid) (= cf5bcbc38af7005b6b97e524af1600c931b5b12c)
+FILERPROVIDES_/usr/lib/bluez5/bluetooth/obexd_bluez5: elf(buildid) (= 1f144f9689b7068c68b84332a0d16cae0861201e)
+FILERPROVIDES_/usr/bin/rctest_bluez5: elf(buildid) (= 7147c1f55fb21e47c156b6705f8680212a6b1adb)
+FILERPROVIDES_/usr/bin/hcitool_bluez5: elf(buildid) (= 88bd24be6d5e8da3727a71b1420b3d1ecfdffd7b)
+FILERPROVIDES_/usr/bin/bccmd_bluez5: elf(buildid) (= 5fb3d69b062862cad6f3b21e6fc3264a850cbca7)
+FILERPROVIDES_/usr/bin/l2test_bluez5: elf(buildid) (= 8de486f6dd28f17a0909dc2c64ed2eefc8804c3f)
+FILERPROVIDES_/usr/bin/hcidump_bluez5: elf(buildid) (= ce26270b634b81152e6051115c001d3ba3ec850a)
+FILERPROVIDES_/usr/bin/bluetoothctl_bluez5: elf(buildid) (= a2e4e173b6b843967aad4b25a8cc5bc1bde87273)
+FILERPROVIDES_/usr/bin/hciattach_bluez5: elf(buildid) (= b90ca7948831bdca5e65670b282d4aa2fc42cfba)
+FILERPROVIDES_/usr/bin/ciptool_bluez5: elf(buildid) (= ff49696f0e9c4cb468c8f22f5d30a2b539b60a8d)
+FILERPROVIDES_/usr/bin/rfcomm_bluez5: elf(buildid) (= bba9892ec337ce04d4acdabc77d504c1c4c863a2)
+FILERPROVIDES_/usr/bin/hciconfig_bluez5: elf(buildid) (= 254cd9ae84906f898033b2b7023b2225a00ccd2f)
+FILERPROVIDES_/usr/bin/l2ping_bluez5: elf(buildid) (= c66d855264ddccfb386f4e1620cfa5599e146dd1)
+FILERPROVIDES_/usr/lib/bluez5/bluetooth/bluetoothd_bluez5: elf(buildid) (= 145b6f59eb157e455b152ae27c539cb05bb24b75)
+FILERPROVIDES_/usr/bin/btmon_bluez5: elf(buildid) (= cb95e6549deb5d7e85945089555f88cf0510fd7a)
+FILERPROVIDES_/usr/bin/sdptool_bluez5: elf(buildid) (= 477afdbe63c006329c8b0f227f522fabed02c913)
+FILERPROVIDES_/usr/bin/bluemoon_bluez5: elf(buildid) (= fe2ffd113012b546318c8cf2fabe728b857cdc39)
+FILERDEPENDSFLIST_bluez5: /lib/udev/hid2hci /usr/lib/bluez5/bluetooth/obexd /usr/bin/rctest /usr/bin/hcitool /usr/bin/bccmd /usr/bin/l2test /usr/bin/hcidump /usr/bin/bluetoothctl /usr/bin/hciattach /usr/bin/ciptool /usr/bin/rfcomm /usr/bin/hciconfig /usr/bin/l2ping /usr/lib/bluez5/bluetooth/bluetoothd /usr/bin/btmon /usr/bin/sdptool /usr/bin/bluemoon
+FILERDEPENDS_/lib/udev/hid2hci_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 libudev.so.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/bluez5/bluetooth/obexd_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libdbus-1.so.3 libdl.so.2 libdl.so.2(GLIBC_2.4) libglib-2.0.so.0 libgthread-2.0.so.0 libical.so.0 libicalss.so.0 libicalvcal.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/rctest_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hcitool_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 libudev.so.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/bccmd_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/l2test_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hcidump_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/bluetoothctl_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libdbus-1.so.3 libglib-2.0.so.0 libgthread-2.0.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libreadline.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hciattach_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libglib-2.0.so.0 libgthread-2.0.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ciptool_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/rfcomm_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hciconfig_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/l2ping_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/bluez5/bluetooth/bluetoothd_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libdbus-1.so.3 libdl.so.2 libdl.so.2(GLIBC_2.4) libglib-2.0.so.0 libgthread-2.0.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/btmon_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.9) libpthread.so.0 libpthread.so.0(GLIBC_2.4) librt.so.1 libudev.so.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sdptool_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libglib-2.0.so.0 libgthread-2.0.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/bluemoon_bluez5: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.9) libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+PKGSIZE_bluez5: 2954917

@@ -1,0 +1,15 @@
+PN: data
+PV: git-invalidgit
+PR: r21
+PKGV: git-invalidgit
+PKGR: r21
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_data-dbg: Qualcomm Technologies Data Modules (Excluding ConfigDB and DSUtils)  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_data-dbg: data version git-invalidgit-r21 - Debugging files
+RRECOMMENDS_data-dbg: dsutils-dbg glibc-dbg qmi-client-helper-dbg configdb-dbg libstdc++-dbg diag-dbg time-genoff-dbg data-oss-dbg pugixml-dbg glib-2.0-dbg libgcc-dbg qmi-framework-dbg xmllib-dbg qmi-dbg
+SECTION_data-dbg: devel
+PKG_data-dbg: data-dbg
+ALLOW_EMPTY_data-dbg: 1
+FILES_data-dbg: /usr/bin/.debug /usr/sbin/.debug /usr/lib/data/.debug /usr/lib/.debug /bin/.debug /sbin/.debug /lib/.debug /usr/lib/data/.debug /usr/lib/matchbox-panel/.debug /usr/lib/data/data/.debug /usr/src/debug  /usr/tests/.debug                      /WEBSERVER/www/cgi-bin/.debug 
+FILES_INFO: {"/usr/lib/.debug/libql_qcmap_client.so.1.0.0": 75441, "/usr/bin/.debug/eMBMs_TunnelingModule": 65719, "/usr/lib/.debug/libdsi_netctrl.so.0.0.0": 966586, "/usr/lib/.debug/libqcmap_client.so.1.0.0": 324956, "/usr/bin/.debug/netmgrd": 716990, "/usr/bin/.debug/quec_wifi_bridge": 21310, "/usr/bin/.debug/ipacm_perf": 89945, "/WEBSERVER/www/cgi-bin/.debug/qcmap_web_cgi": 16860, "/usr/bin/.debug/qti": 277085, "/usr/lib/.debug/libqdp.so.0.0.0": 28040, "/usr/tests/.debug/dsi_netctrl_test": 56355, "/WEBSERVER/www/cgi-bin/.debug/qcmap_auth": 27389, "/usr/lib/.debug/libqcmapipc.so.1.0.0": 19825, "/usr/lib/.debug/libqcmap_cm.so.1.0.0": 266170, "/usr/lib/.debug/libnetmgr.so.0.0.0": 106275, "/usr/bin/.debug/QCMAP_StaInterface": 13678, "/usr/bin/.debug/portal_ctl": 17647, "/usr/bin/.debug/Quectel_QCMAP_CLI": 88357, "/usr/bin/.debug/QCMAP_Web_CLIENT": 176294, "/usr/bin/.debug/qmi_ip": 124127, "/usr/bin/.debug/QCMAP_CLI": 140623, "/usr/bin/.debug/radish": 153411, "/usr/bin/.debug/qmi_ip_multiclient": 257363, "/usr/lib/.debug/libqdi.so.0.0.0": 232474, "/usr/bin/.debug/portal_gateway": 242170, "/usr/bin/.debug/ipacmdiag": 13910, "/usr/bin/.debug/Quec_WIFI_CLI": 92788, "/usr/bin/.debug/qti_ppp": 91415, "/usr/lib/.debug/libqmi_ip.so.1.0.0": 4572, "/usr/bin/.debug/QCMAP_ConnectionManager": 2023812, "/usr/lib/.debug/libqcmaputils.so.1.0.0": 6906}
+PKGSIZE_data-dbg: 6738493

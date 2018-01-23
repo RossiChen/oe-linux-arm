@@ -1,0 +1,14 @@
+PN: quectel-atc-pipe
+PV: git-invalidgit
+PR: r1
+PKGV: git-invalidgit
+PKGR: r1
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_quectel-atc-pipe-staticdev: Quectel ATC PIPE  This package contains static libraries for software development.
+SUMMARY_quectel-atc-pipe-staticdev: quectel-atc-pipe version git-invalidgit-r1 - Development files (Static Libraries)
+RDEPENDS_quectel-atc-pipe-staticdev: quectel-atc-pipe-dev (= git-invalidgit-r1)
+SECTION_quectel-atc-pipe-staticdev: devel
+PKG_quectel-atc-pipe-staticdev: quectel-atc-pipe-staticdev
+FILES_quectel-atc-pipe-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/quectel-atc-pipe/*.a
+FILES_INFO: {}
+PKGSIZE_quectel-atc-pipe-staticdev: 0

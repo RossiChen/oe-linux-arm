@@ -1,0 +1,13 @@
+PN: quectel-atc-pipe
+PV: git-invalidgit
+PR: r1
+PKGV: git-invalidgit
+PKGR: r1
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_quectel-atc-pipe-doc: Quectel ATC PIPE  This package contains documentation.
+SUMMARY_quectel-atc-pipe-doc: quectel-atc-pipe version git-invalidgit-r1 - Documentation files
+SECTION_quectel-atc-pipe-doc: doc
+PKG_quectel-atc-pipe-doc: quectel-atc-pipe-doc
+FILES_quectel-atc-pipe-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_quectel-atc-pipe-doc: 0

@@ -1,0 +1,24 @@
+PN: wpa-supplicant-qcacld
+PV: git
+PR: r4.2
+PKGV: git
+PKGR: r4.2
+LICENSE: BSD
+DESCRIPTION: Wi-Fi Protected Access(WPA) Supplicant
+SUMMARY: wpa-supplicant-qcacld version git-r4.2
+RDEPENDS_wpa-supplicant-qcacld: libcrypto (>= 1.0.1k) glibc (>= 2.21) qmi (>= git-invalidgit) qmi-framework (>= git-invalidgit) libnl-genl (>= 3.2.25) libnl (>= 3.2.25) libssl (>= 1.0.1k)
+SECTION: base
+PKG_wpa-supplicant-qcacld: wpa-supplicant-qcacld
+FILES_wpa-supplicant-qcacld: /usr/bin/* /usr/sbin/* /usr/lib/wpa-supplicant-qcacld/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/wpa-supplicant-qcacld /usr/lib/wpa-supplicant-qcacld/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers /usr/sbin/* /usr/lib/lib*.so
+FILERPROVIDESFLIST_wpa-supplicant-qcacld: /usr/sbin/wpa@underscore@passphrase /usr/lib/libwpa@underscore@client.so /usr/sbin/wpa@underscore@cli /usr/sbin/wpa@underscore@supplicant
+FILES_INFO: {"/usr/lib/libwpa_client.so": 16844, "/usr/sbin/wpa_passphrase": 29232, "/usr/sbin/wpa_supplicant": 787328, "/usr/sbin/wpa_cli": 65888}
+FILERPROVIDES_/usr/sbin/wpa@underscore@passphrase_wpa-supplicant-qcacld: elf(buildid) (= c8a7d2cf00f796320cc54e362ff6466247acf34a)
+FILERPROVIDES_/usr/lib/libwpa@underscore@client.so_wpa-supplicant-qcacld: elf(buildid) (= 77e3a86643fc41f602e77d14aba5bb654e783c23) libwpa_client.so
+FILERPROVIDES_/usr/sbin/wpa@underscore@cli_wpa-supplicant-qcacld: elf(buildid) (= 4660d9b1e2f3aeaa09fb71a18539ba7b0f6cc627)
+FILERPROVIDES_/usr/sbin/wpa@underscore@supplicant_wpa-supplicant-qcacld: elf(buildid) (= 49472fa8b34bdb610b7e31e642a9c066f57eda69)
+FILERDEPENDSFLIST_wpa-supplicant-qcacld: /usr/sbin/wpa@underscore@passphrase /usr/lib/libwpa@underscore@client.so /usr/sbin/wpa@underscore@cli /usr/sbin/wpa@underscore@supplicant
+FILERDEPENDS_/usr/sbin/wpa@underscore@passphrase_wpa-supplicant-qcacld: libc.so.6 libc.so.6(GLIBC_2.4) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.0) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libwpa@underscore@client.so_wpa-supplicant-qcacld: rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/wpa@underscore@cli_wpa-supplicant-qcacld: libc.so.6 libc.so.6(GLIBC_2.4) librt.so.1 librt.so.1(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/wpa@underscore@supplicant_wpa-supplicant-qcacld: libc.so.6 libc.so.6(GLIBC_2.4) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.0) libnl-3.so.200 libnl-3.so.200(libnl_3) libnl-genl-3.so.200 libnl-genl-3.so.200(libnl_3) libpthread.so.0 libpthread.so.0(GLIBC_2.4) libqmi_cci.so.1 libqmiservices.so.1 librt.so.1 librt.so.1(GLIBC_2.4) libssl.so.1.0.0 libssl.so.1.0.0(OPENSSL_1.0.0) libssl.so.1.0.0(OPENSSL_1.0.1) rtld(GNU_HASH)
+PKGSIZE_wpa-supplicant-qcacld: 899292

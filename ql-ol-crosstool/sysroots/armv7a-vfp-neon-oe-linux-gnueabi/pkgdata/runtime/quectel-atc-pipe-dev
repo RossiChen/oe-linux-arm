@@ -1,0 +1,16 @@
+PN: quectel-atc-pipe
+PV: git-invalidgit
+PR: r1
+PKGV: git-invalidgit
+PKGR: r1
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_quectel-atc-pipe-dev: Quectel ATC PIPE  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_quectel-atc-pipe-dev: quectel-atc-pipe version git-invalidgit-r1 - Development files
+RDEPENDS_quectel-atc-pipe-dev: quectel-atc-pipe (= git-invalidgit-r1)
+RRECOMMENDS_quectel-atc-pipe-dev: glibc-dev initscripts-dev
+SECTION_quectel-atc-pipe-dev: devel
+PKG_quectel-atc-pipe-dev: quectel-atc-pipe-dev
+ALLOW_EMPTY_quectel-atc-pipe-dev: 1
+FILES_quectel-atc-pipe-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/quectel-atc-pipe/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_quectel-atc-pipe-dev: 0

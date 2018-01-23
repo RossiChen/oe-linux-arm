@@ -1,0 +1,14 @@
+PN: recovery
+PV: git
+PR: r7
+PKGV: git
+PKGR: r7
+LICENSE: Apache-2.0
+DESCRIPTION_recovery-staticdev: Recovery bootloader  This package contains static libraries for software development.
+SUMMARY_recovery-staticdev: recovery version git-r7 - Development files (Static Libraries)
+RDEPENDS_recovery-staticdev: recovery-dev (= git-r7)
+SECTION_recovery-staticdev: devel
+PKG_recovery-staticdev: recovery-staticdev
+FILES_recovery-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/recovery/*.a
+FILES_INFO: {"/usr/lib/libminzip.a": 110708, "/usr/lib/libmtdutils.a": 43978, "/usr/lib/libminelf.a": 19986, "/usr/lib/libapplypatch.a": 184846, "/usr/lib/libedify.a": 99570}
+PKGSIZE_recovery-staticdev: 459088

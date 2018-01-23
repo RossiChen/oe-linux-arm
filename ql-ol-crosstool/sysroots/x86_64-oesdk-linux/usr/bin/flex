@@ -1,0 +1,4 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+export M4=/home/gale/workspace0/MDM9x07/OpenLinux/MCU_R02_update07/apps_proc/oe-core/build/tmp-glibc/deploy/sdk/ql-ol-sdk/ql-ol-crosstool/sysroots/x86_64-oesdk-linux/usr/bin/m4
+exec -a `dirname $realpath`/flex `dirname $realpath`/flex.real "$@"

@@ -1,0 +1,15 @@
+PN: mtd-utils
+PV: 1.0
+PR: r1
+PKGV: 1.0
+PKGR: r1
+LICENSE: GPLv2
+DESCRIPTION_mtd-utils-dbg: Tools for managing memory technology devices.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_mtd-utils-dbg: mtd-utils version 1.0-r1 - Debugging files
+RRECOMMENDS_mtd-utils-dbg: lzo-dbg glibc-dbg zlib-dbg util-linux-libuuid-dbg
+SECTION_mtd-utils-dbg: devel
+PKG_mtd-utils-dbg: mtd-utils-dbg
+ALLOW_EMPTY_mtd-utils-dbg: 1
+FILES_mtd-utils-dbg: /usr/bin/.debug /usr/sbin/.debug /usr/lib/mtd-utils/.debug /usr/lib/.debug /bin/.debug /sbin/.debug /lib/.debug /usr/lib/mtd-utils/.debug /usr/lib/matchbox-panel/.debug /usr/lib/mtd-utils/mtd-utils/.debug /usr/src/debug
+FILES_INFO: {"/usr/sbin/.debug/ubidetach": 61658, "/usr/sbin/.debug/recv_image": 51670, "/usr/sbin/.debug/ubirsvol": 63438, "/usr/sbin/.debug/nandtest": 17710, "/usr/sbin/.debug/jffs2dump": 35207, "/usr/sbin/.debug/ubiupdatevol": 66992, "/usr/sbin/.debug/nftldump": 16251, "/usr/sbin/.debug/mkfs.ubifs": 186510, "/usr/sbin/.debug/ubicrc32": 20521, "/usr/sbin/.debug/ubiformat": 176766, "/usr/sbin/.debug/serve_image": 51050, "/usr/sbin/.debug/nanddump": 93313, "/usr/sbin/.debug/flash_otp_info": 10517, "/usr/sbin/.debug/ubimkvol": 65844, "/usr/sbin/.debug/sumtool": 41245, "/usr/sbin/.debug/ubirmvol": 62290, "/usr/sbin/.debug/flash_erase": 89890, "/usr/sbin/.debug/ubinize": 97060, "/usr/sbin/.debug/mtdinfo": 113032, "/usr/sbin/.debug/jffs2reader": 34817, "/usr/sbin/.debug/mkfs.jffs2": 103531, "/usr/sbin/.debug/ubinfo": 68219, "/usr/sbin/.debug/ubiattach": 62658, "/usr/sbin/.debug/flash_otp_dump": 10306, "/usr/sbin/.debug/ubirename": 60706, "/usr/sbin/.debug/doc_loadbios": 14982, "/usr/sbin/.debug/nftl_format": 19213, "/usr/sbin/.debug/docfdisk": 17932, "/usr/sbin/.debug/rfdformat": 13390, "/usr/sbin/.debug/nandwrite": 95272, "/usr/sbin/.debug/flash_otp_lock": 12167, "/usr/sbin/.debug/flash_lock": 11476, "/usr/sbin/.debug/ubiblock": 60807, "/usr/sbin/.debug/mtd_debug": 18898, "/usr/sbin/.debug/ftl_check": 16296, "/usr/sbin/.debug/flash_unlock": 11478, "/usr/sbin/.debug/flashcp": 27162, "/usr/sbin/.debug/rfddump": 25266, "/usr/sbin/.debug/ftl_format": 20772, "/usr/sbin/.debug/flash_otp_write": 12192}
+PKGSIZE_mtd-utils-dbg: 2038504

@@ -1,0 +1,15 @@
+PN: quectel-atc-pipe
+PV: git-invalidgit
+PR: r1
+PKGV: git-invalidgit
+PKGR: r1
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_quectel-atc-pipe-dbg: Quectel ATC PIPE  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_quectel-atc-pipe-dbg: quectel-atc-pipe version git-invalidgit-r1 - Debugging files
+RRECOMMENDS_quectel-atc-pipe-dbg: glibc-dbg
+SECTION_quectel-atc-pipe-dbg: devel
+PKG_quectel-atc-pipe-dbg: quectel-atc-pipe-dbg
+ALLOW_EMPTY_quectel-atc-pipe-dbg: 1
+FILES_quectel-atc-pipe-dbg: /usr/bin/.debug /usr/sbin/.debug /usr/lib/quectel-atc-pipe/.debug /usr/lib/.debug /bin/.debug /sbin/.debug /lib/.debug /usr/lib/quectel-atc-pipe/.debug /usr/lib/matchbox-panel/.debug /usr/lib/quectel-atc-pipe/quectel-atc-pipe/.debug /usr/src/debug
+FILES_INFO: {"/usr/bin/.debug/quectel-atc-pipe": 19747}
+PKGSIZE_quectel-atc-pipe-dbg: 19747

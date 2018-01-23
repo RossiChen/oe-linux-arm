@@ -1,0 +1,14 @@
+PN: liburcu
+PV: 0.8.6
+PR: r0
+PKGV: 0.8.6
+PKGR: r0
+LICENSE: LGPLv2.1+ & MIT-style
+DESCRIPTION_liburcu-staticdev: Userspace RCU (read-copy-update) library.  This package contains static libraries for software development.
+SUMMARY_liburcu-staticdev: Userspace RCU (read-copy-update) library - Development files (Static Libraries)
+RDEPENDS_liburcu-staticdev: liburcu-dev (= 0.8.6-r0)
+SECTION_liburcu-staticdev: devel
+PKG_liburcu-staticdev: liburcu-staticdev
+FILES_liburcu-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/liburcu/*.a
+FILES_INFO: {"/usr/lib/liburcu-qsbr.a": 26066, "/usr/lib/liburcu-cds.a": 37566, "/usr/lib/liburcu.a": 25848, "/usr/lib/liburcu-common.a": 14242, "/usr/lib/liburcu-bp.a": 27524, "/usr/lib/liburcu-signal.a": 26252, "/usr/lib/liburcu-mb.a": 24972}
+PKGSIZE_liburcu-staticdev: 182470

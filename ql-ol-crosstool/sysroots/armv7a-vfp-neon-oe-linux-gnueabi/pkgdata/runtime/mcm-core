@@ -1,0 +1,46 @@
+PN: mcm-core
+PV: git-invalidgit
+PR: r4
+PKGV: git-invalidgit
+PKGR: r4
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION: QTI Mobile Connection Manager Core libraries and Service
+SUMMARY: mcm-core version git-invalidgit-r4
+RDEPENDS_mcm-core: qmi (>= git-invalidgit) qmi-client-helper (>= git-invalidgit) audioalsa (>= git) acdbrtac (>= git-invalidgit) adiertac (>= git-invalidgit) diag (>= git-invalidgit) glibc (>= 2.21) acdbloader (>= git-invalidgit) data (>= git-invalidgit) glib-2.0 (>= 2.42.1) libstdc++ (>= 4.9.2) qmi-framework (>= git-invalidgit) alsa-intf (>= git-invalidgit) acdbmapper (>= git-invalidgit) configdb (>= git-invalidgit) dsutils (>= git-invalidgit) xmllib (>= git-invalidgit) libgcc (>= 4.9.2) audcal (>= git-invalidgit) time-genoff (>= git-invalidgit)
+SECTION: base
+PKG_mcm-core: mcm-core
+FILES_mcm-core: /usr/bin/* /usr/sbin/* /usr/lib/mcm-core/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/mcm-core /usr/lib/mcm-core/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers /usr/tests/
+FILERPROVIDESFLIST_mcm-core: /usr/bin/MCM@underscore@ATCOP@underscore@CLI /usr/lib/libmcm@underscore@srv@underscore@audio.so.0.0.0 /usr/bin/IoEConsoleClient /usr/lib/libmcm@underscore@log@underscore@util.so.0.0.0 /usr/bin/MCM@underscore@atcop@underscore@svc /usr/tests/mcm@underscore@data@underscore@test /usr/bin/MCM@underscore@MOBILEAP@underscore@ConnectionManager /usr/bin/mcm@underscore@data@underscore@srv /usr/bin/mcm@underscore@ril@underscore@service /usr/lib/libmcmipc.so.0.0.0 /usr/bin/MCM@underscore@MOBILEAP@underscore@CLI /usr/bin/uim@underscore@test@underscore@client /usr/lib/libmcm.so.0.0.0
+FILES_INFO: {"/etc/init.d/start_MCM_MOBILEAP_ConnectionManager_le": 801, "/etc/init.d/start_mcm_ril_srv_le": 684, "/usr/bin/MCM_MOBILEAP_ConnectionManager": 73612, "/usr/lib/libmcm_srv_audio.so.0": 24696, "/usr/bin/uim_test_client": 37600, "/usr/lib/libmcm_log_util.so.0": 8164, "/usr/bin/MCM_ATCOP_CLI": 10288, "/usr/bin/MCM_MOBILEAP_CLI": 62048, "/usr/lib/libmcm.so.0": 42976, "/etc/init.d/start_mcm_data_srv_le": 676, "/usr/bin/mcm_ril_service": 340412, "/usr/bin/MCM_atcop_svc": 15360, "/etc/init.d/start_MCM_atcop_svc_le": 716, "/usr/bin/mcm_data_srv": 48456, "/usr/lib/libmcmipc.so.0": 23320, "/usr/bin/IoEConsoleClient": 51808, "/usr/tests/mcm_data_test": 30940}
+FILERPROVIDES_/usr/bin/MCM@underscore@ATCOP@underscore@CLI_mcm-core: elf(buildid) (= 551e43e041037e9a8adc000a3dfba55f54789caa)
+FILERPROVIDES_/usr/lib/libmcm@underscore@srv@underscore@audio.so.0.0.0_mcm-core: elf(buildid) (= 22d14a84066adc900471108d8b513f2bafc14332) libmcm_srv_audio.so.0
+FILERPROVIDES_/usr/bin/IoEConsoleClient_mcm-core: elf(buildid) (= d451f025b9310ff7c470fc623cc41c945479fbd7)
+FILERPROVIDES_/usr/lib/libmcm@underscore@log@underscore@util.so.0.0.0_mcm-core: elf(buildid) (= 9b5fb181f1fab94039a69743d2bbd54b9c4b68a0) libmcm_log_util.so.0
+FILERPROVIDES_/usr/bin/MCM@underscore@atcop@underscore@svc_mcm-core: elf(buildid) (= 6b8d7da375d1ed1fba6484883d980dcf26a04e7f)
+FILERPROVIDES_/usr/tests/mcm@underscore@data@underscore@test_mcm-core: elf(buildid) (= b68bca0643cbc7f657fc7852a6a931de715fdedc)
+FILERPROVIDES_/usr/bin/MCM@underscore@MOBILEAP@underscore@ConnectionManager_mcm-core: elf(buildid) (= 6c64ed6a13a6ec3cc8d7975df2134853fe691e14)
+FILERPROVIDES_/usr/bin/mcm@underscore@data@underscore@srv_mcm-core: elf(buildid) (= 3dadb32f505068901b38b8fd54bacaa5afb6dfa6)
+FILERPROVIDES_/usr/bin/mcm@underscore@ril@underscore@service_mcm-core: elf(buildid) (= 829edfbe610b179d6d53227f680f8ae356568575)
+FILERPROVIDES_/usr/lib/libmcmipc.so.0.0.0_mcm-core: elf(buildid) (= 6ca7cc4720e49d08a3c9521dbe63e2533010524e) libmcmipc.so.0
+FILERPROVIDES_/usr/bin/MCM@underscore@MOBILEAP@underscore@CLI_mcm-core: elf(buildid) (= 8a3213d6300a085793d486ffba6e02648c70a1e9)
+FILERPROVIDES_/usr/bin/uim@underscore@test@underscore@client_mcm-core: elf(buildid) (= ed33e302a8adc6b4e36e1b33e31ba9cf502a105e)
+FILERPROVIDES_/usr/lib/libmcm.so.0.0.0_mcm-core: elf(buildid) (= 32b7a0d14f64170dfce41a3d44a7ea9a63227e64) libmcm.so.0
+FILERDEPENDSFLIST_mcm-core: /etc/init.d/start@underscore@MCM@underscore@atcop@underscore@svc@underscore@le /usr/bin/MCM@underscore@ATCOP@underscore@CLI /usr/lib/libmcm@underscore@srv@underscore@audio.so.0.0.0 /usr/bin/IoEConsoleClient /usr/lib/libmcm@underscore@log@underscore@util.so.0.0.0 /usr/bin/MCM@underscore@atcop@underscore@svc /usr/tests/mcm@underscore@data@underscore@test /usr/bin/MCM@underscore@MOBILEAP@underscore@ConnectionManager /usr/bin/mcm@underscore@data@underscore@srv /usr/bin/mcm@underscore@ril@underscore@service /usr/lib/libmcmipc.so.0.0.0 /etc/init.d/start@underscore@MCM@underscore@MOBILEAP@underscore@ConnectionManager@underscore@le /usr/bin/MCM@underscore@MOBILEAP@underscore@CLI /etc/init.d/start@underscore@mcm@underscore@data@underscore@srv@underscore@le /usr/bin/uim@underscore@test@underscore@client /etc/init.d/start@underscore@mcm@underscore@ril@underscore@srv@underscore@le /usr/lib/libmcm.so.0.0.0
+FILERDEPENDS_/etc/init.d/start@underscore@MCM@underscore@atcop@underscore@svc@underscore@le_mcm-core: /bin/sh
+FILERDEPENDS_/usr/bin/MCM@underscore@ATCOP@underscore@CLI_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libdiag.so.1 libmcm.so.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libmcm@underscore@srv@underscore@audio.so.0.0.0_mcm-core: libacdbloader.so.1 libacdbmapper.so.1 libacdbrtac.so.1 libadiertac.so.1 libalsa_intf.so.1 libaudcal.so.1 libaudioalsa.so.1 libc.so.6 libc.so.6(GLIBC_2.4) libdiag.so.1 libglib-2.0.so.0 libgthread-2.0.so.0 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libtime_genoff.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/IoEConsoleClient_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libglib-2.0.so.0 libmcm.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libmcm@underscore@log@underscore@util.so.0.0.0_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/MCM@underscore@atcop@underscore@svc_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libdiag.so.1 libglib-2.0.so.0 libmcmipc.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libqmi_csi.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/tests/mcm@underscore@data@underscore@test_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libglib-2.0.so.0 libmcm.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/MCM@underscore@MOBILEAP@underscore@ConnectionManager_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libdiag.so.1 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libmcmipc.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libqcmap_client.so.1 libqmi_cci.so.1 libqmi_csi.so.1 libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(GLIBCXX_3.4) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/mcm@underscore@data@underscore@srv_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libdiag.so.1 libdsi_netctrl.so.0 libdsutils.so.1 libglib-2.0.so.0 libmcmipc.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libqmi_cci.so.1 libqmi_client_helper.so.1 libqmi_csi.so.1 libqmiservices.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/mcm@underscore@ril@underscore@service_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libdiag.so.1 libdl.so.2 libdl.so.2(GLIBC_2.4) libglib-2.0.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libqmi_cci.so.1 libqmi_csi.so.1 libqmi_encdec.so.1 libqmiservices.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libmcmipc.so.0.0.0_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libconfigdb.so.0 libdiag.so.1 libdsutils.so.1 libglib-2.0.so.0 libgthread-2.0.so.0 libm.so.6 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libqmi_cci.so.1 libqmi_client_qmux.so.1 libqmi_common_so.so.1 libqmi_csi.so.1 libqmi_encdec.so.1 libqmi_sap.so.1 libtime_genoff.so.1 libxml.so.0 rtld(GNU_HASH)
+FILERDEPENDS_/etc/init.d/start@underscore@MCM@underscore@MOBILEAP@underscore@ConnectionManager@underscore@le_mcm-core: /bin/sh
+FILERDEPENDS_/usr/bin/MCM@underscore@MOBILEAP@underscore@CLI_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libdiag.so.1 libmcm.so.0 rtld(GNU_HASH)
+FILERDEPENDS_/etc/init.d/start@underscore@mcm@underscore@data@underscore@srv@underscore@le_mcm-core: /bin/sh
+FILERDEPENDS_/usr/bin/uim@underscore@test@underscore@client_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libdiag.so.1 libmcm.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) rtld(GNU_HASH)
+FILERDEPENDS_/etc/init.d/start@underscore@mcm@underscore@ril@underscore@srv@underscore@le_mcm-core: /bin/sh
+FILERDEPENDS_/usr/lib/libmcm.so.0.0.0_mcm-core: libc.so.6 libc.so.6(GLIBC_2.4) libconfigdb.so.0 libdiag.so.1 libdsutils.so.1 libglib-2.0.so.0 libgthread-2.0.so.0 libm.so.6 libmcm_log_util.so.0 libpthread.so.0 libpthread.so.0(GLIBC_2.4) libqmi_cci.so.1 libqmi_client_qmux.so.1 libqmi_common_so.so.1 libqmi_csi.so.1 libqmi_encdec.so.1 libqmi_sap.so.1 libtime_genoff.so.1 libxml.so.0 rtld(GNU_HASH)
+PKGSIZE_mcm-core: 772557

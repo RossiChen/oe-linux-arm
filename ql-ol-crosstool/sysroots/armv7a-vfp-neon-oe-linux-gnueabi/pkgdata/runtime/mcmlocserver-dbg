@@ -1,0 +1,15 @@
+PN: mcmlocserver
+PV: git-invalidgit
+PR: r4
+PKGV: git-invalidgit
+PKGR: r4
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_mcmlocserver-dbg: MCM Location Server  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_mcmlocserver-dbg: mcmlocserver version git-invalidgit-r4 - Debugging files
+RRECOMMENDS_mcmlocserver-dbg: mcm-core-dbg glibc-dbg loc-mcm-type-conv-dbg loc-hal-dbg location-service-dbg glib-2.0-dbg libgcc-dbg qmi-framework-dbg
+SECTION_mcmlocserver-dbg: devel
+PKG_mcmlocserver-dbg: mcmlocserver-dbg
+ALLOW_EMPTY_mcmlocserver-dbg: 1
+FILES_mcmlocserver-dbg: /usr/bin/.debug /usr/sbin/.debug /usr/lib/mcmlocserver/.debug /usr/lib/.debug /bin/.debug /sbin/.debug /lib/.debug /usr/lib/mcmlocserver/.debug /usr/lib/matchbox-panel/.debug /usr/lib/mcmlocserver/mcmlocserver/.debug /usr/src/debug
+FILES_INFO: {"/usr/bin/.debug/mcmlocserver": 16124}
+PKGSIZE_mcmlocserver-dbg: 16124

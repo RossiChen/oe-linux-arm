@@ -1,0 +1,13 @@
+PN: quectel-atc-pipe
+PV: git-invalidgit
+PR: r1
+PKGV: git-invalidgit
+PKGR: r1
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION: Quectel ATC PIPE
+SUMMARY: quectel-atc-pipe version git-invalidgit-r1
+SECTION: base
+PKG_quectel-atc-pipe-locale: quectel-atc-pipe-locale
+FILES_quectel-atc-pipe-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_quectel-atc-pipe-locale: 0

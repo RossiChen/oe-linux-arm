@@ -1,0 +1,16 @@
+PN: atfwd-daemon
+PV: git-invalidgit
+PR: r3
+PKGV: git-invalidgit
+PKGR: r3
+LICENSE: Qualcomm-Technologies-Inc.-Proprietary
+DESCRIPTION_atfwd-daemon-dev: Daemon to handle AT commands  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_atfwd-daemon-dev: atfwd-daemon version git-invalidgit-r3 - Development files
+RDEPENDS_atfwd-daemon-dev: atfwd-daemon (= git-invalidgit-r3)
+RRECOMMENDS_atfwd-daemon-dev: alsa-intf-dev zlib-dev libssl-dev libcrypto-dev libgcc-dev dsutils-dev glibc-dev qmi-dev glib-2.0-dev quectel-tts-sdk-dev qmi-framework-dev
+SECTION_atfwd-daemon-dev: devel
+PKG_atfwd-daemon-dev: atfwd-daemon-dev
+ALLOW_EMPTY_atfwd-daemon-dev: 1
+FILES_atfwd-daemon-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/atfwd-daemon/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_atfwd-daemon-dev: 0

@@ -1,0 +1,4 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+export TERMINFO_DIRS=/home/gale/workspace0/MDM9x07/OpenLinux/MCU_R02_update07/apps_proc/oe-core/build/tmp-glibc/deploy/sdk/ql-ol-sdk/ql-ol-crosstool/sysroots/x86_64-oesdk-linux/etc/terminfo:/etc/terminfo:/usr/share/terminfo:/usr/share/misc/terminfo:/lib/terminfo
+exec -a `dirname $realpath`/python2.7 `dirname $realpath`/python2.7.real "$@"

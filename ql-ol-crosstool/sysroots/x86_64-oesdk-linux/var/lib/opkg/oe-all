@@ -1,0 +1,154 @@
+Package: packagegroup-core-standalone-sdk-target-dbg
+Version: 1.0-r8
+Recommends: libsegfault-dbg, glibc-utils-dbg, glibc-gconv-cp1252-dbg, glibc-dbg, qemuwrapper-cross-dbg, glibc-localedata-i18n-dbg, libstdc++-dbg, glibc-gconv-ibm850-dbg, glibc-gconv-iso8859-15-dbg, libgcov-dbg, glibc-thread-db-dbg, glibc-gconv-iso8859-1-dbg, libgcc-dbg
+Section: devel
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 82c9885b19f851ded005c2e9c310c090
+Size: 812
+Filename: packagegroup-core-standalone-sdk-target-dbg_1.0-r8_all.ipk
+Source: None
+Description:  Target packages for the standalone SDK - Debugging files  Target packages
+ for the standalone SDK.  This package contains ELF   symbols and related
+ sources for debugging purposes.
+OE: packagegroup-core-standalone-sdk-target
+License: MIT
+Priority: optional
+
+Package: packagegroup-core-standalone-sdk-target-dev
+Version: 1.0-r8
+Depends: packagegroup-core-standalone-sdk-target (= 1.0-r8)
+Recommends: qemuwrapper-cross-dev, glibc-utils-dev, glibc-gconv-cp1252-dev, glibc-dev, glibc-thread-db-dev, glibc-gconv-ibm850-dev, libstdc++-dev, glibc-localedata-i18n-dev, libgcc-dev, libsegfault-dev, glibc-gconv-iso8859-15-dev, glibc-gconv-iso8859-1-dev, libgcov-dev
+Section: devel
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: a4df39ab147ae4786b216f36c1d0f371
+Size: 840
+Filename: packagegroup-core-standalone-sdk-target-dev_1.0-r8_all.ipk
+Source: None
+Description:  Target packages for the standalone SDK - Development files  Target
+ packages for the standalone SDK.  This package contains symbolic   links,
+ header files, and related items necessary for software   development.
+OE: packagegroup-core-standalone-sdk-target
+License: MIT
+Priority: optional
+
+Package: packagegroup-core-standalone-sdk-target
+Version: 1.0-r8
+Depends: glibc-dbg, glibc-thread-db, glibc, glibc-gconv-ibm850, libstdc++-dev, glibc-gconv-cp1252, libstdc++, libgcc-dev, libsegfault, libgcc, libgcov-dev, glibc-gconv-iso8859-15, glibc-utils, glibc-dev, glibc-gconv-iso8859-1, glibc-localedata-i18n, qemuwrapper-cross
+Section: base
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 53a2da9509ae579101e6e424ef246374
+Size: 758
+Filename: packagegroup-core-standalone-sdk-target_1.0-r8_all.ipk
+Source: None
+Description:  Target packages for the standalone SDK  Target packages for the
+ standalone SDK.
+OE: packagegroup-core-standalone-sdk-target
+License: MIT
+Priority: optional
+
+Package: run-postinsts-dbg
+Version: 1.0-r9
+Section: devel
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 6608470c574b523cc10704422078e251
+Size: 722
+Filename: run-postinsts-dbg_1.0-r9_all.ipk
+Source: file://run-postinsts file://run-postinsts.init file://run-postinsts.service
+Description:  Runs postinstall scripts on first boot of the target device - Debugging
+ files  Runs postinstall scripts on first boot of the target device.  This
+ package contains ELF symbols and related sources for debugging purposes.
+OE: run-postinsts
+License: MIT
+Priority: optional
+
+Package: run-postinsts-dev
+Version: 1.0-r9
+Depends: run-postinsts (= 1.0-r9)
+Recommends: initscripts-dev
+Section: devel
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 33186d9f17dd75262a62e70fab57328d
+Size: 764
+Filename: run-postinsts-dev_1.0-r9_all.ipk
+Source: file://run-postinsts file://run-postinsts.init file://run-postinsts.service
+Description:  Runs postinstall scripts on first boot of the target device - Development
+ files  Runs postinstall scripts on first boot of the target device.  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: run-postinsts
+License: MIT
+Priority: optional
+
+Package: run-postinsts
+Version: 1.0-r9
+Recommends: update-rc.d
+Section: devel
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 4e22b2d92604a1961bb050688577a9ac
+Size: 1806
+Filename: run-postinsts_1.0-r9_all.ipk
+Source: file://run-postinsts file://run-postinsts.init file://run-postinsts.service
+Description:  Runs postinstall scripts on first boot of the target device  Runs
+ postinstall scripts on first boot of the target device.
+OE: run-postinsts
+License: MIT
+Priority: optional
+
+Package: update-rc.d-dbg
+Version: 0.7-r6
+Section: devel
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 58218f6446a161abfa300ca7b61c2cee
+Size: 838
+Filename: update-rc.d-dbg_0.7-r6_all.ipk
+Source: git://codeaurora.org/quic/le/platform/external/update-rc.d;protocol=git;branch=github/master file://add-verbose.patch file://check-if-symlinks-are-valid.patch
+Description:  manage symlinks in /etc/rcN.d - Debugging files  update-rc.d is a
+ utilities that allows the management of symlinks to the   initscripts in
+ the /etc/rcN.d directory structure.  This package contains   ELF symbols
+ and related sources for debugging purposes.
+OE: update-rc.d
+License: GPLv2+
+Priority: optional
+
+Package: update-rc.d-dev
+Version: 0.7-r6
+Depends: update-rc.d (= 0.7-r6)
+Section: devel
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 6fc4be218109b834dbca12f11428baf9
+Size: 862
+Filename: update-rc.d-dev_0.7-r6_all.ipk
+Source: git://codeaurora.org/quic/le/platform/external/update-rc.d;protocol=git;branch=github/master file://add-verbose.patch file://check-if-symlinks-are-valid.patch
+Description:  manage symlinks in /etc/rcN.d - Development files  update-rc.d is a
+ utilities that allows the management of symlinks to the   initscripts in
+ the /etc/rcN.d directory structure.  This package contains   symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: update-rc.d
+License: GPLv2+
+Priority: optional
+
+Package: update-rc.d
+Version: 0.7-r6
+Section: base
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 88a31ce6d9ebf070f48ab435ae36adf0
+Size: 2846
+Filename: update-rc.d_0.7-r6_all.ipk
+Source: git://codeaurora.org/quic/le/platform/external/update-rc.d;protocol=git;branch=github/master file://add-verbose.patch file://check-if-symlinks-are-valid.patch
+Description:  manage symlinks in /etc/rcN.d  update-rc.d is a utilities that allows the
+ management of symlinks to the   initscripts in the /etc/rcN.d directory
+ structure.
+OE: update-rc.d
+License: GPLv2+
+Priority: optional
+

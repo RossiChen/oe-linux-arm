@@ -1,0 +1,3 @@
+#!/bin/bash
+realpath=`readlink -fn $0`
+exec -a `dirname $realpath`/file `dirname $realpath`/file.real --magic-file /home/gale/workspace0/MDM9x07/OpenLinux/MCU_R02_update07/apps_proc/oe-core/build/tmp-glibc/deploy/sdk/ql-ol-sdk/ql-ol-crosstool/sysroots/x86_64-oesdk-linux/usr/share/misc/magic.mgc "$@"
